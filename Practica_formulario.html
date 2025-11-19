@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width">
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="http://ncoge.com/phps/formulario.php" method="post"></form>
+      <table border="1px" width="100%">
+        <tr>
+          <td valign="top">
+            <fieldset>
+              <legend>Datos básicos</legend>
+                <label for="nameuser">Nombres:</label> <input type="text" name="nameuser"> 
+                <br>
+                <br>
+                <label for="lastnameuser">Apellidos:</label> <input type="text" name="lastnameuser">
+                <br>
+                <br>
+                <label for="correo">Correo:</label> <input type="text" name="correo">
+                <br>
+                <br>
+                Hobbies <textarea></textarea>
+            </fieldset>
+          </td>
+          <td>
+            <table border="1px" width="100%">
+              <tr>
+                <td>
+                  <fieldset>
+                    <legend>Idiomas</legend>
+                    Ingles: 1<input name="ingles" type="radio"> 2<input name="ingles" type="radio"> 3<input name="ingles" type="radio"> 4<input name="ingles" type="radio"> 5<input name="ingles" type="radio">
+                    <br>
+                    Francés: 1<input name="frances" type="radio"> 2<input name="frances" type="radio"> 3<input name="frances" type="radio"> 4<input name="frances" type="radio"> 5<input name="frances" type="radio">
+                    <br>
+                    Alemám: 1<input name="aleman" type="radio"> 2<input name="aleman" type="radio"> 3<input name="aleman" type="radio"> 4<input name="aleman" type="radio"> 5<input name="aleman" type="radio">
+                  </fieldset>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <fieldset>
+                    <legend>Dominio de los siguientes programas</legend>
+                    <table width="100%" >
+                      <tr>
+                        <td align="center">
+                          Writer: <input type="checkbox">
+                        </td>
+                        <td align="center">
+                          Base: <input type="checkbox">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          Calc: <input type="checkbox">
+                        </td>
+                        <td align="center">
+                          Impress <input type="checkbox">
+                        </td>
+                      </tr>
+                    </table>
+                  </fieldset>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="so">Sistema operativo</label> <br/>
+                    <select id="so" name="so">
+                        <option value="" selected="selected">- selecciona -</option>
+                        <option value="windows">Windows</option>
+                        <option value="mac">Mac</option>
+                        <option value="linux">Linux</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
