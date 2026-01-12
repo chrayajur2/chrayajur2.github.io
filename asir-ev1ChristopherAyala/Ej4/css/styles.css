@@ -1,0 +1,121 @@
+/*
+    CSS para el examen
+
+    colores:
+
+    fondo: white;
+    linea: lightgray;
+    boton: #007BFF;
+    boton seleccionado: #0056b3;
+*/
+
+body {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.container {
+    border-radius: 10px;
+}
+
+.ticktocker, .footer {
+    border-radius: 10px;
+    border-style: ridge;
+    box-shadow: 1px 1px 8px;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer {
+
+}
+
+.imageHome{
+    border:black 4px solid;
+    border-radius: 3%;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* Se utiliza en imágenes y videos 
+    para asegurarse de que siempre llenen 
+    completamente el contenedor, manteniendo
+    su relación de aspecto*/
+    object-fit: cover;
+}
+
+.ticktocker .images {
+    width: 150px;
+    height: 150px;    
+    /* Se utiliza en imágenes y videos 
+    para asegurarse de que siempre llenen 
+    completamente el contenedor, manteniendo 
+    su relación de aspecto*/
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.ticktocker h2 {
+    color:black;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.ticktocker p {
+    color: black;
+    font-size: 1em;
+}
+
+#menu {
+    list-style-type: none
+}
+
+li {
+    border-left: 5px red solid;
+    display: inline;
+}
+
+#menu a {
+    margin-left: 5px;
+}
+
+#menu a:hover {
+    color: red;
+}
+
+
+.button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color:violet;
+    /* animacion en css, para cambiar el color del boton, no visto en clase 
+    pero yo te lo regalo ;) */
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+@media all and (max-width: 700px) {
+    .imageHome {
+        width: 50%;
+        height: auto;
+    }
+    .ticktocker, .button, .footer{
+        border: red solid;
+    }
+}
