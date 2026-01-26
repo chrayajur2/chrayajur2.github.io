@@ -1,0 +1,288 @@
+*{
+  margin: 0px auto;
+}
+
+body {
+  background: url('../images/fondospider.jpg');
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: cover;
+  font-family: 'Indie Flower', cursive;
+  width: 100%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+img {
+  margin: 10px;
+  width: 100%;
+}
+
+ul {
+  color: white;
+}
+
+p {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#header {
+  margin-top: 33px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  overflow: auto;
+}
+
+#dios{
+    border: solid red;
+    overflow: auto;
+    background-color: #6a6e73;
+}
+
+#jesus{
+  float: left;
+  width: 80%;
+  border-right: dotted white 2px;
+}
+#c a img {
+  width: 25%;
+  display: block;
+  margin: auto;
+}
+
+#c a img:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+
+#a {
+    border: dotted black 2px;
+    background-color: gray;
+    border-radius: 15px;
+    overflow: auto;
+    font-size: x-large;
+    margin-right: 5%;
+}
+
+#spi616{
+  width: 20%;
+  float: right;
+}
+
+#b {
+    border: dotted black 2px;
+    background-color: gray;
+    border-radius: 15px;
+    margin-top: 10px;
+    overflow: auto;
+    font-size: x-large;
+    margin-right: 5%;
+}
+
+#sup1{
+   width: 20%;
+  float: left
+}
+
+#c {
+    border-radius: 15px;
+    float: right;
+    width: 19.5%;
+    text-align: center;
+}
+
+#menu {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  /*
+  Punto 1: Barra de menu siempre estara 
+  */
+  /* necesitas 3 instrucciones*/
+  /*1: */
+  /*2: */
+  /*3: */
+  text-align: center;  
+  background-color: red;
+  border: 1px solid #FF9900;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2em;
+}
+
+#menu a{
+  color: white;
+  text-decoration: none;
+}
+
+
+#menu li{
+  display: inline;
+  padding-left: 5px;  
+}
+
+#menu li a:hover{
+  /*
+  Punto 1: Los enlaces cambian de color de fondo y estan subrayados de color azul
+  */
+  /* necesitas 2 instrucciones*/
+  /*1: */ color: blue;
+  /*2: */ text-decoration: underline;
+}
+
+#footer{
+  /*
+  Punto 6: Barra de pie de pagina siempre estara 
+  */
+  /* necesitas 3 instrucciones*/
+  /*1: */
+  position: fixed;
+  /*2: */
+  bottom: 0px;
+  /*3: */
+  width: 100%;
+  
+  background-color: #097054;
+  text-align: center;
+  color: white;
+  border-top: 5px solid black;
+  clear: both;
+}
+
+#footer a{
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover{
+  color: #443266;
+  background-color: white;
+  text-decoration: none;
+}
+
+
+
+#lema{
+  /* border: solid blue; */
+  /* width: 1000px; */
+  font-size: xx-large;
+  text-align: left;
+  margin-left: 18%;
+  color: #FF9900;
+}
+
+
+#imageLeft {
+  text-align: left;
+  margin: auto;
+  padding-bottom: 5px;
+  width: 15%;
+  float: left;
+}
+
+
+
+
+#textCookie {
+  text-align: center;
+}
+
+#cookieEU {
+ /*
+  Punto 4: La capa esta posicionada casi al centro de la pantalla. Se diferencia del menu y del footer en que NO se queda fija al hacer scroll de la pagina.
+ */
+
+  /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
+  /*1: */
+  position: absolute;  
+  /*2: */
+  top: 40%;    
+  /*3: */
+  left: 24%;    
+  /*4: */
+  right: 24%;   
+  border:2px solid red;
+  background-color: white;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 50px black;
+}
+
+.button {
+  	background-color: #097054; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media all and (max-width: 500px) {
+  #imageLeft {
+    /*
+    Punto 7.1: Barra de menu siempre estara 
+    */
+    /* necesitas 1 instruccion*/
+    /*1: */
+    float: none;
+    
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  #textCentral {
+    margin: 0px 0px ;
+  }
+  
+  #imageToHide {
+    /*
+    Punto 7.2: Barra de menu siempre estara 
+    */
+    /* necesitas 1 instruccion*/
+    /*1: */
+    float: none;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  
+  #header {
+    margin-top: 50px;
+  }
+ 
+}
+@media all and (max-width: 500px){
+  
+  #c{
+    float: none;
+    width: 100%;
+  }
+  #c a img{
+    display: inline;
+    width: 5%;
+  }
+}
+
+@media all and (max-width: 500px) {
+ #jesus{
+    width: 100%;
+    margin-right: 5%;
+  }
+}
+@media all and (max-width: 300px) {
+  #header {
+    /*
+    Cambio el margen para que no lo tape el menu
+    */
+    margin-top: 100px;
+  }
+}
